@@ -20,7 +20,7 @@ def home():
         {"_id": "home"}, {"$inc": {"count": 1}}, upsert=True, return_document=True
     )
     count = result["count"] if result else 1
-    return f"<h1>Hello World from TripTick DevOps lab!</h1><p>Version: {APP_VERSION}</p><p>Visits saved in MongoDB: {count}</p>"
+    return f"<h1>Hello from Mussawer pipeline v2!</h1><p>Version: {APP_VERSION}</p><p>Visits saved in MongoDB: {count}</p>"
  
  
 @app.route("/health")
